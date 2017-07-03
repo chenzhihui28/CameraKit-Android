@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white"
-    android:descendantFocusability="beforeDescendants"
-    android:focusable="true"
-    android:focusableInTouchMode="true">
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.flurgle.camerakit.CameraView xmlns:app="http://schemas.android.com/apk/res-auto"
+        <com.flurgle.camerakit.CameraView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/camera"
             android:layout_width="match_parent"
             android:layout_height="500dp"
@@ -24,7 +25,7 @@
             app:ckFlash="off"
             app:ckFocus="continuous"
             app:ckJpegQuality="100"
-            app:ckMethod="standard" />
+            app:ckMethod="standard"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,7 +47,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="@color/colorPrimary"
                     android:src="@drawable/ic_photo"
-                    android:tint="@android:color/white" />
+                    android:tint="@android:color/white"/>
 
                 <ImageButton
                     android:id="@+id/captureVideo"
@@ -56,10 +57,10 @@
                     android:layout_weight="1"
                     android:backgroundTint="@color/colorPrimary"
                     android:src="@drawable/ic_video"
-                    android:tint="@android:color/white"
-                    android:visibility="gone" />
+                    android:tint="@android:color/white"/>
 
                 <ImageButton
+                    android:visibility="gone"
                     android:id="@+id/toggleFlash"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -67,7 +68,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="@color/colorPrimary"
                     android:src="@drawable/ic_flash"
-                    android:tint="@android:color/white" />
+                    android:tint="@android:color/white"/>
 
                 <ImageButton
                     android:id="@+id/toggleCamera"
@@ -77,7 +78,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="@color/colorPrimary"
                     android:src="@drawable/ic_switch"
-                    android:tint="@android:color/white" />
+                    android:tint="@android:color/white"/>
 
             </LinearLayout>
 
@@ -85,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="10dp"
-                android:background="#cccccc" />
+                android:background="#cccccc"/>
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -95,7 +96,7 @@
                 <View
                     android:layout_width="2.5dp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorPrimary" />
+                    android:background="@color/colorPrimary"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -110,7 +111,7 @@
                         android:text="CAPTURE METHOD"
                         android:textColor="@android:color/black"
                         android:textSize="14dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"/>
 
                     <RadioGroup
                         android:id="@+id/captureModeRadioGroup"
@@ -124,14 +125,14 @@
                             android:id="@+id/modeCaptureStandard"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Standard" />
+                            android:text="Standard"/>
 
                         <RadioButton
                             android:id="@+id/modeCaptureStill"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text="Still" />
+                            android:text="Still"/>
 
                     </RadioGroup>
 
@@ -147,7 +148,7 @@
                 <View
                     android:layout_width="2.5dp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorPrimary" />
+                    android:background="@color/colorPrimary"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -162,7 +163,7 @@
                         android:text="CROP OUTPUT"
                         android:textColor="@android:color/black"
                         android:textSize="14dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"/>
 
                     <RadioGroup
                         android:id="@+id/cropModeRadioGroup"
@@ -176,14 +177,14 @@
                             android:id="@+id/modeCropFullSize"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Off" />
+                            android:text="Off"/>
 
                         <RadioButton
                             android:id="@+id/modeCropVisible"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text="On" />
+                            android:text="On"/>
 
                     </RadioGroup>
 
@@ -199,7 +200,7 @@
                 <View
                     android:layout_width="2.5dp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorPrimary" />
+                    android:background="@color/colorPrimary"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -217,7 +218,7 @@
                         android:text="WIDTH"
                         android:textColor="@android:color/black"
                         android:textSize="14dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"/>
 
                     <TextView
                         android:id="@+id/screenWidth"
@@ -226,7 +227,7 @@
                         android:layout_marginLeft="3dp"
                         android:text="screen: 1080px"
                         android:textColor="@android:color/black"
-                        android:textSize="11dp" />
+                        android:textSize="11dp"/>
 
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -238,7 +239,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="120dp"
                             android:hint="pixels"
-                            android:inputType="number" />
+                            android:inputType="number"/>
 
                         <Button
                             android:id="@+id/widthUpdate"
@@ -251,7 +252,7 @@
                             android:text="UPDATE"
                             android:textColor="@android:color/white"
                             android:textSize="14dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"/>
 
                     </FrameLayout>
 
@@ -267,21 +268,21 @@
                             android:id="@+id/widthCustom"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Custom" />
+                            android:text="Custom"/>
 
                         <RadioButton
                             android:id="@+id/widthWrapContent"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text="wrap_content" />
+                            android:text="wrap_content"/>
 
                         <RadioButton
                             android:id="@+id/widthMatchParent"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text="match_parent" />
+                            android:text="match_parent"/>
 
                     </RadioGroup>
 
@@ -297,7 +298,7 @@
                 <View
                     android:layout_width="2.5dp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorPrimary" />
+                    android:background="@color/colorPrimary"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -315,7 +316,7 @@
                         android:text="HEIGHT"
                         android:textColor="@android:color/black"
                         android:textSize="14dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"/>
 
                     <TextView
                         android:id="@+id/screenHeight"
@@ -324,7 +325,7 @@
                         android:layout_marginLeft="3dp"
                         android:text="screen: 1920px"
                         android:textColor="@android:color/black"
-                        android:textSize="11dp" />
+                        android:textSize="11dp"/>
 
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -336,7 +337,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="120dp"
                             android:hint="pixels"
-                            android:inputType="number" />
+                            android:inputType="number"/>
 
                         <Button
                             android:id="@+id/heightUpdate"
@@ -349,7 +350,7 @@
                             android:text="UPDATE"
                             android:textColor="@android:color/white"
                             android:textSize="14dp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"/>
 
                     </FrameLayout>
 
@@ -365,21 +366,21 @@
                             android:id="@+id/heightCustom"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Custom" />
+                            android:text="Custom"/>
 
                         <RadioButton
                             android:id="@+id/heightWrapContent"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text="wrap_content" />
+                            android:text="wrap_content"/>
 
                         <RadioButton
                             android:id="@+id/heightMatchParent"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text="match_parent" />
+                            android:text="match_parent"/>
 
                     </RadioGroup>
 

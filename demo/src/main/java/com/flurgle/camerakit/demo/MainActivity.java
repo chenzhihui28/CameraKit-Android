@@ -130,6 +130,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLayoutChan
             @Override
             public void onVideoTaken(File video) {
                 super.onVideoTaken(video);
+                Toast.makeText(getApplicationContext(),"video Taken!"+video.getAbsolutePath(),Toast.LENGTH_LONG).show();
 
             }
         });
